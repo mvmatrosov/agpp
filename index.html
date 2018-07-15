@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+<link href="css/jquery-jvectormap-2.0.2.css" rel="stylesheet" type="text/css"/>
 </head>
 <body id="home">
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
@@ -22,10 +23,10 @@
             <a href="#home" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#map" class="nav-link">Map</a>
+            <a href="#dashboard-head-section" class="nav-link">Dashboard</a>
           </li>
           <li class="nav-item">
-            <a href="#orgchart-head-section" class="nav-link">Dashboard</a>
+            <a href="#map" class="nav-link">Map</a>
           </li>
           <li class="nav-item">
             <a href="#orgchart-head-section" class="nav-link">Orgchart</a>
@@ -43,22 +44,90 @@
   <div class="dark-overlay">
     <div class="home-inner">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-sm-6">
-            <h1 class="display-4"><i class="fa fa-file-pdf-o"></i>ddd</h1>
+        <div class="row justify-content-around">
+          <div class="col-4">
+            <h1 class="display-4"><i class="fa fa-file-pdf-o"></i></h1>
           </div>
-          <div class="col-sm-6">
-            <h1 class="display-4"><i class="fa fa-yahoo"></i>dddd</h1>
+          <div class="col-4">
+            <h1 class="display-4"><i class="fa fa-yahoo"></i></h1>
           </div>
         </div>
       </div>
     </div>
   </div>
 </header>
+<!--DASHBOARD SECTION-->
+<section id="dashboard-head-section" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Dashboard</h1>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!--END OF HOME SECTION-->
+<!--MAP SECTION-->
+<section id="map" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-sm-12">
+        <div class="panel panel-default card-view">
+          <div class="panel-heading">
+            <div class="pull-left">
+              <h1 class="panel-title">Geography</h1>
+            </div>
+            <div class="clearfix"></div>
+            </div>
+            <div class="panel-body">
+              <div id="world_map_marker_1" style="height: 400px"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--ORGCHART SECTION-->
+<section id="orgchart-head-section" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Orgchart</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--ORGCHART SECTION-->
+<section id="risks-head-section" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Risks</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--FOOTER MAIN-->
+<footer id="main-footer" class="bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <div class="py-4">
+          <h1 class="h3">AGPP</h1>
+          <p>Copyright &copy; 2018</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
   <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-jvectormap-2.0.2.min.js"></script>
+  <script src="js/jquery-jvectormap-world-mill-en.js"></script>
+  <script src="js/vectormap-data.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
